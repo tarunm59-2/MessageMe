@@ -1,11 +1,11 @@
 package com.example.chatapp_back.messaging_stuff;
-import java.util.UUID;
-public record ConversationPubliId(UUID ID) {
+import org.springframework.util.Assert;
 
-    public ConversationPubliId {
-        
-        if (ID == null) {
-            throw new IllegalArgumentException("Name must be between 3 and 255 characters long");
-        }
+import java.util.UUID;
+
+public record ConversationPublicId(UUID value) {
+
+    public ConversationPublicId {
+        Assert.notNull(value, "conversation cannot be null");
     }
 }

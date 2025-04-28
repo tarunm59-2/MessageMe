@@ -1,4 +1,5 @@
-package fr.codecake.whatsappclone.infrastructure.secondary.entity;
+package com.example.chatapp_back.infra;
+
 
 import com.example.chatapp_back.messaging_stuff.Authority;
 import com.example.chatapp_back.messaging_stuff.AuthorityBuilder;
@@ -42,7 +43,7 @@ public class AuthorityEntity {
         return authorities
                 .stream()
                 .map(authority ->
-                        fr.codecake.whatsappclone.infrastructure.secondary.entity.AuthorityEntityBuilder.authorityEntity()
+                        com.example.chatapp_back.infra.AuthorityEntityBuilder.authorityEntity()
                                 .name(authority.getName().name())
                                 .build())
                 .collect(Collectors.toSet());

@@ -1,5 +1,5 @@
 package com.example.chatapp_back.messaging_stuff;
-
+import org.jilt.Builder;
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class User {
 
     private UserLastName lastName;
-    private UserFirstname firstname;
+    private UserFirstName firstname;
     private UserEmail email;
     private UserPublicId userPublicId;
     private UserImageUrl imageUrl;
@@ -21,7 +21,7 @@ public class User {
     private Set<Authority> authorities;
     private Long dbId;
 
-    public User(UserLastName lastName, UserFirstname firstname, UserEmail email,
+    public User(UserLastName lastName, UserFirstName firstname, UserEmail email,
                 UserPublicId userPublicId, UserImageUrl imageUrl, Instant lastModifiedDate,
                 Instant createdDate, Instant lastSeen, Set<Authority> authorities, Long dbId) {
         assertMandatoryFields(lastName, firstname, email, authorities);
@@ -38,7 +38,7 @@ public class User {
     }
 
     private void assertMandatoryFields(UserLastName lastName,
-                                       UserFirstname firstname,
+                                       UserFirstName firstname,
                                        UserEmail email,
                                        Set<Authority> authorities) {
         if (lastName == null) {
@@ -74,9 +74,9 @@ public class User {
         }
 
         if (attributes.containsKey("given_name")) {
-            userBuilder.firstname(new UserFirstname(attributes.get("given_name").toString()));
+            userBuilder.firstname(new UserFirstName(attributes.get("given_name").toString()));
         } else if (attributes.containsKey("nickname")) {
-            userBuilder.firstname(new UserFirstname(attributes.get("nickname").toString()));
+            userBuilder.firstname(new UserFirstName(attributes.get("nickname").toString()));
         }
 
         if (attributes.containsKey("family_name")) {
@@ -113,7 +113,7 @@ public class User {
         return lastName;
     }
 
-    public UserFirstname getFirstname() {
+    public UserFirstName getFirstname() {
         return firstname;
     }
 

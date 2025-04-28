@@ -34,10 +34,11 @@ public abstract class BaseEntity<ID> implements Serializable {
     }
 
     public Instant getUpdatedAt() {
-        return updatedAt;
+        return updated_timestamp;
     }
 
     public void setUpdatedAt(Instant updatedAt) {
         this.updated_timestamp = updatedAt;
     }
+
 }

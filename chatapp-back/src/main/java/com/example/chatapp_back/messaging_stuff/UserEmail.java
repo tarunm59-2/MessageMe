@@ -1,3 +1,4 @@
+package com.example.chatapp_back.messaging_stuff;
 
 public record UserEmail(String value) {
 

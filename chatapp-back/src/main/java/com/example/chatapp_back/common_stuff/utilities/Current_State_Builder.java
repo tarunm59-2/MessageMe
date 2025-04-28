@@ -16,12 +16,12 @@ public class Current_State_Builder<D, E> {
         return new Current_State<>(this.status, this.value, this.error);
     }
 
-    public Current_State<D, E> SuccessCase(T value) {
+    public Current_State<D, E> SuccessCase(D value) {
         this.value = value;
         this.status = Notification.OK;
         return new Current_State<>(this.status, this.value, this.error);
     }
-    public Current_State<T, V> UnauthorizedCase(E error) {
+    public Current_State<D,E> UnauthorizedCase(E error) {
         this.error = error;
         this.status = Notification.UNAUTHORIZED;
         return new Current_State<>(this.status, this.value, this.error);

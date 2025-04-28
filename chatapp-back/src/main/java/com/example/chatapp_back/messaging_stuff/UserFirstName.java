@@ -1,7 +1,8 @@
+package com.example.chatapp_back.messaging_stuff;
 
-public record UserFirstname(String value) {
+public record UserFirstName(String value) {
 
-    public UserFirstname {
+    public UserFirstName {
         if (value == null) {
             throw new IllegalArgumentException("'value' cannot be null");
         }

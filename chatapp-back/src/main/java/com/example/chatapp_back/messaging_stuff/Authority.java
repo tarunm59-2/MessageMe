@@ -1,4 +1,4 @@
-package fr.codecake.whatsappclone.messaging.domain.user.aggregate;
+package com.example.chatapp_back.messaging_stuff;
 
 import org.jilt.Builder;
 
