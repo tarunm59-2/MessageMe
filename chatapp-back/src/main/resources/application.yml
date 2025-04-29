@@ -2,7 +2,7 @@ logging:
   level:
     ROOT: INFO
     org.hibernate.SQL: INFO
-    fr.codecake.whatsappclone: INFO
+    com.example.chatapp_back: INFO
 
 spring:
   application:
@@ -34,7 +34,7 @@ spring:
         connection:
           provider_disables_autocommit: true
         order_inserts: true
-        default_schema: whatsappclone
+        default_schema: chatapp_backend
     hibernate:
       ddl-auto: none
       naming:
@@ -43,14 +43,14 @@ spring:
     open-in-view: false
   liquibase:
     change-log: classpath:db/changelog/master.xml
-    default-schema: whatsappclone
+    default-schema: chatapp_backend
     contexts: dev
 #    drop-first: true
   security:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9080/realms/chatapp-backend
+          issuer-uri: http://localhost:9080/realms/chatapp_backend
   devtools:
     restart:
       enabled: false

@@ -7,6 +7,7 @@ import java.util.Set;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Repository;
 
 import com.example.chatapp_back.messaging_stuff.ConversationPublicId;
 import com.example.chatapp_back.messaging_stuff.User;
@@ -14,6 +15,8 @@ import com.example.chatapp_back.messaging_stuff.UserEmail;
 import com.example.chatapp_back.messaging_stuff.UserPublicId;
 import com.example.chatapp_back.messaging_stuff.UserRepository;
 
+
+@Repository
 public class SpringDataUserRepository implements UserRepository{
 
     @Override

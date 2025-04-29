@@ -3,7 +3,7 @@ logging:
     ROOT: INFO
     org.hibernate.SQL: DEBUG
     org.springframework.security: DEBUG
-    fr.codecake.whatsappclone: DEBUG
+    com.example.chatapp_back: DEBUG
 spring:
   devtools:
     restart:

@@ -58,7 +58,7 @@
                                  baseTableName="user_authority"
                                  constraintName="fk_user_id"
                                  referencedColumnNames="id"
-                                 referencedTableName="whatsapp_user"/>
+                                 referencedTableName="chatapp_user"/>
         <loadData
                 file="db/data/authority.csv"
                 separator=";"

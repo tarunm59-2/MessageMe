@@ -69,7 +69,7 @@
                              onDelete="CASCADE"/>
     <addForeignKeyConstraint baseColumnNames="user_fk_sender" baseTableName="message"
                              constraintName="fk_message_user_id" deferrable="false"
-                             initiallyDeferred="false" referencedColumnNames="id" referencedTableName="whatsapp_user"
+                             initiallyDeferred="false" referencedColumnNames="id" referencedTableName="chatapp_user"
                              validate="true"
                              onDelete="CASCADE"/>
     <addForeignKeyConstraint baseColumnNames="message_binary_content_fk" baseTableName="message"
