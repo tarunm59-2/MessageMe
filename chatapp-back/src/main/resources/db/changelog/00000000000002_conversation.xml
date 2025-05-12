@@ -8,7 +8,7 @@
     <createSequence sequenceName="conversation_sequence" startValue="1" incrementBy="1"/>
   </changeSet>
 
-  <changeSet id="00000000000002-conversation" author="tarun">
+  <changeSet id="00000000000003-conversation" author="tarun">
     <createTable tableName="conversation">
       <column name="id" type="bigint">
         <constraints primaryKey="true" nullable="false"/>
@@ -19,8 +19,8 @@
       <column name="name" type="varchar(256)">
         <constraints nullable="false"/>
       </column>
-      <column name="created_date" type="timestamp"/>
-      <column name="last_modified_date" type="timestamp"/>
+      <column name="created_timestamp" type="timestamp"/>
+      <column name="updated_timestamp" type="timestamp"/>
     </createTable>
 
     <createTable tableName="user_conversation">

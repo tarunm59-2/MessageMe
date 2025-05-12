@@ -1,6 +1,5 @@
 package com.example.chatapp_back.common_stuff.authentication;
 
-import fr.codecake.whatsappclone.shared.authentication.application.AuthenticatedUser;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.AbstractAuthenticationToken;

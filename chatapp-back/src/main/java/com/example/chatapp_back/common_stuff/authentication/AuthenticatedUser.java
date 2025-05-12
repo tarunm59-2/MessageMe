@@ -15,8 +15,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Optional;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+
 
 /**
  * Utility class for accessing authenticated user details.

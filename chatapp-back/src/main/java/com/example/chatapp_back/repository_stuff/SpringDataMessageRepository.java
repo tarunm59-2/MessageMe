@@ -2,6 +2,8 @@ package com.example.chatapp_back.repository_stuff;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.example.chatapp_back.messaging_stuff.Conversation;
 import com.example.chatapp_back.messaging_stuff.ConversationPublicId;
 import com.example.chatapp_back.messaging_stuff.Message;
@@ -9,6 +11,8 @@ import com.example.chatapp_back.messaging_stuff.MessageRepository;
 import com.example.chatapp_back.messaging_stuff.MessageSendState;
 import com.example.chatapp_back.messaging_stuff.User;
 import com.example.chatapp_back.messaging_stuff.UserPublicId;
+
+@Repository
 
 public class SpringDataMessageRepository implements MessageRepository {
 

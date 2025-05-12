@@ -8,7 +8,7 @@
         <createSequence sequenceName="user_sequence" startValue="1" incrementBy="1"/>
     </changeSet>
 
-    <changeSet id="00000000000001-user" author="tarun">
+    <changeSet id="00000000000002-user" author="tarun">
         <createTable tableName="chatapp_user">
             <column name="id" type="bigint">
                 <constraints primaryKey="true" nullable="false"/>
@@ -25,8 +25,8 @@
             <column name="last_seen" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="created_date" type="timestamp"/>
-            <column name="last_modified_date" type="timestamp"/>
+            <column name="created_timestamp" type="timestamp"/>
+            <column name="updated_timestamp" type="timestamp"/>
         </createTable>
     </changeSet>
 

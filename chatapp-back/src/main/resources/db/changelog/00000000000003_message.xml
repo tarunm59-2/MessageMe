@@ -9,7 +9,7 @@
     <createSequence sequenceName="message_binary_content_sequence" startValue="1" incrementBy="1"/>
   </changeSet>
 
-  <changeSet id="00000000000003-message-binary-content" author="tarun">
+  <changeSet id="00000000000004-message-binary-content" author="tarun">
     <createTable tableName="message_binary_content">
       <column name="id" type="bigint">
         <constraints primaryKey="true" nullable="false"/>
@@ -20,8 +20,8 @@
       <column name="file_content_type" type="varchar(255)">
         <constraints nullable="false"/>
       </column>
-      <column name="created_date" type="timestamp"/>
-      <column name="last_modified_date" type="timestamp"/>
+      <column name="created_timestamp" type="timestamp"/>
+      <column name="updated_timestamp" type="timestamp"/>
     </createTable>
   </changeSet>
 
